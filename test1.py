@@ -1,6 +1,3 @@
-import os
-import cv2
-import numpy as np
 import keras
 
 import segmentation_models as sm
@@ -9,7 +6,7 @@ from Loader import *
 train_x = "VesselSegmentationImages/img"
 train_y = "VesselSegmentationImages/mask"
 
-valid_x = "VesselSegmentationImages/vaild/img"
+valid_x = "VesselSegmentationImages/valid/img"
 valid_y = "VesselSegmentationImages/vaild/mask"
 
 
@@ -19,7 +16,7 @@ BACKBONE = 'efficientnetb3'
 BATCH_SIZE = 8
 CLASSES = ['retinal']
 LR = 0.0001
-EPOCHS = 40
+EPOCHS = 10
 
 preprocess_input = sm.get_preprocessing(BACKBONE)
 

@@ -1,0 +1,9 @@
+pip install segmentation_models
+pip install albumentations
+pip install tensorflow
+pip install keras
+pip install efficientnet 
+pip install keras-applications
+pip install image-classifiers
+
+sudo apt-get update && sudo apt-get install -y libgl1-mesa-glx
